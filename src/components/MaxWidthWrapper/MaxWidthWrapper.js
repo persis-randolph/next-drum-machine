@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './MaxWidthWrapper.module.css';
 
 function MaxWidthWrapper({
@@ -8,10 +7,7 @@ function MaxWidthWrapper({
   ...delegated
 }) {
   return (
-    <Tag
-      {...delegated}
-      className={`${styles.wrapper} ${className}`}
-    >
+    <Tag {...delegated} className={`${styles.wrapper} ${className}`}>
       {children}
     </Tag>
   );
